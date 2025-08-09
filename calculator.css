@@ -1,0 +1,31 @@
+.calculator {
+    color: #ffffff;
+    background-color: #101510;
+    font-family: "monaco";
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.screen {
+    background-color: #222f24;
+    text-align: right;
+    padding: 25px 5px 25px 5px;
+    font-size: 30px;
+    border-radius: 25px;
+}
+
+.button { 
+    background-color: #171e18;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.operation {
+    background-color: #394a3b;
+}
+
+.answer{
+    background-color: #18512a;
+}
