@@ -10,7 +10,7 @@ function handleClick(event) {
     if (innerText == "b"){
         backSpace();
     } else if (innerText == "="){
-        console.log("equal");
+        equal();
     } else if (innerText == "AC"){ 
         clearScreen();
     } else {
@@ -38,6 +38,10 @@ function clearScreen() {
 function backSpace() {
     const screen =  document.getElementById("screen");
     screen.innerText = screen.innerText.slice(0, -1);
+}
+function equal() {
+    const screen = document.getElementById("screen");
+    screen.innerText = eval(screen.innerText);
 }
 
 window.onload = handleLoad;
