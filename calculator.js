@@ -8,7 +8,7 @@ function handleLoad() {
 function handleClick(event) {
     const innerText = event.target.innerText;
     if (innerText == "b"){
-        console.log("delete");
+        backSpace();
     } else if (innerText == "="){
         console.log("equal");
     } else if (innerText == "AC"){ 
@@ -33,6 +33,11 @@ function addToScreen(text) {
 function clearScreen() {
     const screen =  document.getElementById("screen");
     screen.innerText = "";
+}
+
+function backSpace() {
+    const screen =  document.getElementById("screen");
+    screen.innerText = screen.innerText.slice(0, -1);
 }
 
 window.onload = handleLoad;
