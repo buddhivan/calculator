@@ -21,6 +21,7 @@
     width: 50px;
     text-align: center;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .operation {
@@ -29,4 +30,8 @@
 
 .answer, .clear {
     background-color: #18512a;
+}
+
+.button:active {
+    opacity: 0.5;
 }

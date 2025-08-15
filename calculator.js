@@ -21,12 +21,17 @@ function handleClick(event) {
 function addToScreen(text) {
     const screen = document.getElementById("screen");
     const lastChar = screen.innerText.charAt(screen.innerText.length - 1);
-
-    if (text == "+" || text == "-" || text == "*" || text == "/" || text =="." ) { 
-        if (lastChar == "+" || lastChar == "-" || lastChar == "/" || lastChar == "*" || lastChar == "." || lastChar =="" ) {    
+    if (text == "-" ){
+        if (lastChar == "+" || lastChar == "*" || lastChar == "/" || lastChar == "-" || lastChar == "."){
             return;
         }
     }
+    if (text == "+" || text == "*" || text == "/" || text == "." || text == "" ) { 
+        if (lastChar == "+" || lastChar == "-" || lastChar == "/" || lastChar == "*" || lastChar == "." || lastChar == ""  ) { 
+               return;
+            }
+        }
+    
     screen.innerText = screen.innerText + text;
 }
 
